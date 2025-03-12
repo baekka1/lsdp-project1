@@ -32,7 +32,7 @@
 - number of trials: 25M  
 
 ## Running on GCP:
-**k=6**:  
+**k=7**:  
 - xS: 428135608this_is_a_bitcoin_block_of_71712047_and_80395560
 - hash value: 00000007032cef3a927a90074a6d9ca0cf07b8849575d0338b128dd7fd0b66fd
 - total time elapsed: 1486s
