@@ -32,7 +32,11 @@
 - number of trials: 25M  
 
 ## Running on GCP:
-todo
+**k=6**:  
+- xS: 428135608this_is_a_bitcoin_block_of_71712047_and_80395560
+- hash value: 00000007032cef3a927a90074a6d9ca0cf07b8849575d0338b128dd7fd0b66fd
+- total time elapsed: 1486s
+- number of trials: 500M
 
 ## Random vs Linear Approach:
 There are pros and cons to using either approach. We feel that choosing the nonce randomly may lead to collisions (selecting the same nonce) which is a wasted computation so for smaller number of trials the linear approach may be preferable since it guarantees no repetitions. However, for larger number of trials, the random approach for selecting a potential nonce may help you arrive at the correct answer quicker since with teh linear approach, you must start at 0 each time and increment
