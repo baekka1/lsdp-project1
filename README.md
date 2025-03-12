@@ -39,5 +39,5 @@
 - number of trials: 500M
 
 ## Random vs Linear Approach:
-There are pros and cons to using either approach. We feel that choosing the nonce randomly may lead to collisions (selecting the same nonce) which is a wasted computation so for smaller number of trials the linear approach may be preferable since it guarantees no repetitions. However, for larger number of trials, the random approach for selecting a potential nonce may help you arrive at the correct answer quicker since with teh linear approach, you must start at 0 each time and increment
+There are pros and cons to using either approach. We feel that choosing the nonce randomly may lead to collisions (selecting the same nonce) which is a wasted computation so for smaller number of trials the linear approach may be preferable since it guarantees no repetitions. However, for larger number of trials, the random approach for selecting a potential nonce may help you arrive at the correct answer quicker since with the linear approach, you must start at 0 each time and increment
 to a (potentially) very large nonce value.
