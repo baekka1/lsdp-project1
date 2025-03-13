@@ -37,6 +37,9 @@
 - hash value: 00000007032cef3a927a90074a6d9ca0cf07b8849575d0338b128dd7fd0b66fd
 - total time elapsed: 1486s
 - number of trials: 500M
+- We used the standard cluster type with 1 master and 2 worker nodes, and machine n2-standard-4 (4 vCPU, 2 cores, 16GB memory). Since the number of trials needed looks to be
+roughly expontential, we first tested 625M trials. This was successful, but we wanted to see if less trials were necessary so we tried it with 500M, which also was able to find
+the nonce value. As it takes a long time per job, we stopped here but perhaps changing the machine type would've sped up the process.
 
 ## Random vs Linear Approach:
 There are pros and cons to using either approach. We feel that choosing the nonce randomly may lead to collisions (selecting the same nonce) which is a wasted computation so for smaller number of trials the linear approach may be preferable since it guarantees no repetitions. However, for larger number of trials, the random approach for selecting a potential nonce may help you arrive at the correct answer quicker since with the linear approach, you must start at 0 each time and increment
